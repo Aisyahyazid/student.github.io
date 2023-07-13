@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+
+            body{
+                font-family: 'Courier New', Courier, monospace;
+                padding: 10px;
+                background: lightslategray;
+            }
+
+            /* Header/Blog Title */
+            .header {
+                padding: 30px;
+                text-align: center;
+                background: moccasin;
+            }
+
+            .header h1 {
+                font-size: 50px;
+            }
+
+            /* Style the top navigation bar */
+            .topnav {
+                overflow: hidden;
+                background-color: black;
+            }
+
+            /* Style the topnav links */
+            .topnav a {
+                float: left;
+                display: block;
+                color: aliceblue;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            /* Change color on hover */
+            .topnav a:hover {
+                background-color: aliceblue;
+                color: black;
+            }
+
+            /* Create two unequal columns that floats next to each other */
+            /* Left column */
+            .leftcolumn {
+                float: left;
+                width: 100%;
+            }
+
+            /* Right column */
+            .rightcolumn {
+                float: left;
+                width: 0%;
+                background-color: aquamarine;
+                padding-left: 20px;
+            }
+
+            /* Add a card effect for articles */
+            .card {
+                background-color: whitesmoke;
+                padding: 20px;
+                margin-top: 20px;
+            }
+
+            /* CLear floats after the column */
+            .row::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+
+            /* Footer */
+            .footer {
+                padding: 20px;
+                text-align: center;
+                background: skyblue;
+                margin-top: 20px;
+            }
+
+            /* Responsive layout- when the screen is less than 800px wide, make the two columns stack on top each other instead of next to each other */
+            @media screen and (max-width: 800px) {
+                .leftcolumn, .rightcolumn {
+                    width: 50%;
+                    padding: 0;
+                }  
+            }
+
+            /* Responsive layout- when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+            @media screen and (max-width: 400px) {
+                .topnav a {
+                    float: none;
+                    width: 100%;
+                }
+            }
+
+            h5 {
+                font-size: large;
+            }
+
+            img {
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="index.html">HOME</a></li>
+            <a href="personal.html">PERSONAL DATA</a></li>
+            <a href="education.html">EDUCATION</a></li>
+            <a href="skills.html">SKILLS</a></li>
+            <a href="experience.html">EXPERIENCE</a></li>
+            <a href="extracurricular.html">EXTRACURRICULAR ACTIVITY</a></li>
+            <a href="contact.html">CONTACT</a></li>
+        </div>
+        
+        <div class="header">
+            <h1>My Personal Data</h1>
+        </div>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>PERSONAL DATA</h2>
+                    <h5><center>Name: Nur Aisyah Binti Yazid</center></h5>
+                    <center><img src="picture/Aisyah.jpg" alt="My picture" style="width: 200px;height: 200px;"></center>
+                    <h5><center>Age: 21 Years Old</center></h5>
+                    <h5><center>Date of Birth: 15 May 2002</center></h5>
+                    <h5><center>Father's Name: Yazid Bin Abu Samah</center></h5>
+                    <h5><center>Mother's Name: Faridah Binti Abu Chik</center></h5>
+                    <h5><center>Marital Status: Single</center></h5>
+                    <h5><center>Born at: Hospital Tuanku Ampuan Najihah, Kuala Pilah</center></h5>
+                    <h5><center>Live: Kuala Pilah, Negeri Sembilan</center></h5>
+                    <h5><center>Address: No 80, Kampung Terusan Seberang, 72500, Juasseh, Kuala Pilah, Negeri Sembilan</center></h5>
+                    <h5><center>Religion: Islam</center></h5>
+                    <h5><center>Nationality: Malaysia</center></h5>
+                    <h5><center>Primary School: Sk Kuala Kepis</center></h5>
+                    <h5><center>Secondary School: Sekolah Berasrama Penuh Integrasi Jempol</center></h5>
+                    <h5><center>Matriculation College: Matriculation College Negeri Sembilan</center></h5>
+                    <h5><center>Degree: Uitm Puncak Perdana</center></h5>
+                </div>
+            </div>
+        </div>
+
+    <footer>
+        <p style="color: crimson;">&copy; Copyright 2023. Aisyah.com. All Rights Reserved., Terms & Conditions. Privacy Policy</p>
+    </footer>
+    </body>
+</html>

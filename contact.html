@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    /* Header/ Blog Title */
+    .header {
+        padding: 30px;
+        text-align: center;
+        background: darkcyan
+    }
+
+     /* Responsive layout- when the screen is less than 800px wide, make the two columns stack on top each other instead of next to each other */
+     @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 50%;
+        padding: 0;
+        }  
+    }
+
+    /* Responsive layout- when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+        }
+    }
+
+    /* Style the top navigation bar */
+    .topnav {
+        overflow: hidden;
+        background-color: black;
+    }
+
+    /* Style the topnav links */
+    .topnav a {
+        float: left;
+        display: block;
+        color: aquamarine;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: dotted;
+    }
+
+    /* Change color on hover */
+    .topnav a:hover {
+        background-color: cornflowerblue;
+        color: bisque;
+    }
+
+    /* Right column */
+    .rightcolumn {
+        float: left;
+        width: 0%;
+        background-color: cornflowerblue;
+        padding-left: 20px;
+    }
+
+    /* Left column */
+    .leftcolumn {
+        width: 100%;
+        float: left;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+        background-color: burlywood;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    .header h1 {
+        font-size: 50px;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    /* Footer */
+    .footer {
+        padding: 20px;
+        text-align: center;
+        background: aquamarine;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">HOME</a></li>
+        <a href="personal.html">PERSONAL DATA</a></li>
+        <a href="education.html">EDUCATION</a></li>
+        <a href="skills.html">SKILLS</a></li>
+        <a href="experience.html">EXPERIENCE</a></li>
+        <a href="extracurricular.html">EXTRACURRICULAR ACTIVITY</a></li>
+        <a href="contact.html">CONTACT</a></li>
+    </div>
+
+    <div class="header">
+        <h1 style="color: aquamarine;"><center>My Contact</center></h1>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <blockquote>
+                    <center><table style="width:50%"></center>
+                        <tr><center><th>Contact</th>
+                            <td>011-23405795</td>
+                          </tr>
+                          <br>
+                          <br>
+                          <br>
+                          <br>
+                          <tr>
+                              <th>Instagram</th>
+                              <td>Aisyah.yazid_</td>
+                            </tr>
+                          <br>
+                          <tr>
+                              <th>Linkedin</th>
+                              <td>Aisyah Yazid</td>
+                          </tr>
+                          <br>
+                          <tr>
+                              <th>Facebook</th>
+                              <td>Aisyah Yazid</td>
+                          </tr></center>
+                          <br>
+                    </table>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+<footer>
+    <p style="color: darkcyan;"><center>&copy; Copyright 2023. Aisyah.com. All Rights Reserved., Terms & Conditions. Privacy Policy</center></p>
+</footer>
+</body>
+</html>

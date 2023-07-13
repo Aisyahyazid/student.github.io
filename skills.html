@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    
+    /* Header/ Blog Title */
+    .header {
+        padding: 30px;
+        text-align: center;
+        background: darkslategray;
+    }
+
+    /* Responsive layout- when the screen is less than 800px wide, make the two columns stack on top each other instead of next to each other */
+        @media screen and (max-width: 800px) {
+                .leftcolumn, .rightcolumn {
+                    width: 50%;
+                    padding: 0;
+                }  
+            }
+
+    /* Responsive layout- when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+                .topnav a {
+                    float: none;
+                    width: 100%;
+                }
+            }
+    .header h1 {
+        font-size: 50px;
+    }
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+        float: left;
+        width: 30%;
+        height: 300px;
+        background: cornflowerblue;
+        padding: 20px;
+    }
+
+    /* Style the top navigation bar */
+    .topnav {
+        overflow: hidden;
+        background-color: black;
+    }
+
+    /* Style the topnav links */
+    .topnav a {
+        float: left;
+        display: block;
+        color: aquamarine;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: dotted;
+    }
+
+    /* Change color on hover */
+    .topnav a:hover {
+        background-color: cornflowerblue;
+        color: bisque;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+        list-style-type: square;
+        padding: 0;
+    }
+
+    /* Style the footer */
+    footer {
+        background-color: blanchedalmond;
+        padding: 10px;
+        text-align: center;
+        color: blueviolet;
+    }
+
+    /* CLear floats after the column */
+    .row::selection {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Right column */
+    .rightcolumn {
+        float: left;
+        width: 50%;
+        background-color: lightslategray;
+        padding-left: 20px;
+    }
+
+    /* Left column */
+    .leftcolumn {
+        width: 50%;
+        float: left;
+    }
+
+    /* Add a card effect for articles */
+    .card {
+        background-color: burlywood;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    h5 {
+        font-size: large;
+    }
+</style>
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">HOME</a></li>
+        <a href="personal.html">PERSONAL DATA</a></li>
+        <a href="education.html">EDUCATION</a></li>
+        <a href="skills.html">SKILLS</a></li>
+        <a href="experience.html">EXPERIENCE</a></li>
+        <a href="extracurricular.html">EXTRACURRICULAR ACTIVITY</a></li>
+        <a href="contact.html">CONTACT</a></li>
+    </div>
+
+   <div class="header">
+        <h1 style="color: cornflowerblue;"><center>My Skills</center></h1>
+   </div>
+
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+                <h5> Soft Skills</h5>
+                <ul>
+                    <li style="color: darkmagenta;"><center>Can Work In a Group.</center></li>
+                    <br>
+                    <li style="color: darkorange;"><center>Critical thinking</center></li>
+                    <br>
+                    <li style="color: dodgerblue;"><center>Patience</center></li>
+                    <br>
+                    <li style="color: coral;"><center>Creativity</center></li>
+                    <br>
+                    <li style="color: crimson;"><center>Active listening</center></li>
+                    <br>
+                    <li style="color: indigo;"><center>Time Management</center></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="rightcolumn">
+            <div class="card">
+                <h5>Hard Skills</h5>
+                <ul>
+                    <li style="color: cornflowerblue;"><center>Language Skills: Bahasa Melayu, English, and Basic French</center></li>
+                    <br>
+                    <li style="color: darkcyan;"><center>A degree or certificate</center></li>
+                    <br>
+                    <li style="color: darkorchid;"><center>Typing technique</center></li>
+                    <br>
+                    <li style="color: deeppink;"><center>Proficient in use Microsoft Word, Microsoft Powerpoint, Canva</center></li>
+                    <br>
+                    <li style="color: darkslateblue;"><center>Coding or Programming</center></li>
+                    <br>
+                    <br>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <p style="color: cornflowerblue;">&copy; Copyright 2023. Aisyah.com. All Rights Reserved., Terms & Conditions. Privacy Policy</p>
+</footer>
+</body>
+</html>
